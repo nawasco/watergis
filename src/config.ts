@@ -4,39 +4,35 @@ export const config: Config = {
 	title: 'Water Supply Map for Nanyuki Water',
 	url: 'https://nawasco.co.ke',
 	logo: '/favicon.png',
-	basePath: process.env.NODE_ENV === 'production' ? '/watergis' : '',
-	// basePath: '',
+	// basePath: process.env.NODE_ENV === 'production' ? '/watergis' : '',
+	basePath: '',
 	// change attribution to yours
 	attribution: '©Nanyuki Water and Serwerage Co., Ltd.',
 	// change stylefiles URLs to yours
 	styles: [
-		// {
-		// 	title: 'Satellite(water)',
-		// 	uri: `https://nawasco.github.io/mapbox-stylefiles/satellite/style.json`
-		// },
+		{
+			title: 'Satellite(water)',
+			uri: `https://nawasco.github.io/mapbox-stylefiles/unvt/style-aerial-water.json`
+		},
 		{
 			title: 'UNVT Buildings(water)',
 			uri: `https://nawasco.github.io/mapbox-stylefiles/unvt/style-buildings-water.json`
 		},
-		// {
-		// 	title: 'Street(water)',
-		// 	uri: `https://nawasco.github.io/mapbox-stylefiles/street/style.json`
-		// },
-		// {
-		// 	title: 'Satellite(sewer)',
-		// 	uri: `https://nawasco.github.io/mapbox-stylefiles/satellite/style_sewer.json`
-		// },
+		{
+			title: 'Satellite(sewer)',
+			uri: `https://nawasco.github.io/mapbox-stylefiles/unvt/style-aerial-sewer.json`
+		},
 		{
 			title: 'UNVT Buildings(sewer)',
 			uri: `https://nawasco.github.io/mapbox-stylefiles/unvt/style-buildings-sewer.json`
 		},
-		// {
-		// 	title: 'Street(sewer)',
-		// 	uri: `https://nawasco.github.io/mapbox-stylefiles/street/style_sewer.json`
-		// },
 		{
 			title: 'UN Vector Tile',
 			uri: `https://nawasco.github.io/mapbox-stylefiles/unvt/style.json`
+		},
+		{
+			title: 'UNVT Buildings',
+			uri: `https://nawasco.github.io/mapbox-stylefiles/unvt/style-buildings.json`
 		}
 	],
 	// change initial location and zoom level to yours
@@ -154,9 +150,9 @@ export const config: Config = {
 				iconSize: 1
 			}
 		}
+	},
+	terrain: {
+		source: 'nanyuki-dem',
+		exaggeration: 1
 	}
-	// terrain: {
-	// 	source: 'narok-dem',
-	// 	exaggeration: 1
-	// }
 };

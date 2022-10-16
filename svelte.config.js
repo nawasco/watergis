@@ -16,8 +16,8 @@ const config = {
 		}),
 		paths: {
 			// YOUR github repository name
-			base: process.env.NODE_ENV === 'production' ? '/watergis' : ''
-			// base: ''
+			// base: process.env.NODE_ENV === 'production' ? '/watergis' : ''
+			base: ''
 		}
 	}
 };
