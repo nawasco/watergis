@@ -1,0 +1,149 @@
+{
+  "node_modules/@watergis/svelte-maplibre-legend/style/fa/webfonts/fa-solid-900.woff2": {
+    "file": "_app/immutable/assets/fa-solid-900-d27bc752.woff2",
+    "src": "node_modules/@watergis/svelte-maplibre-legend/style/fa/webfonts/fa-solid-900.woff2"
+  },
+  "node_modules/@watergis/svelte-maplibre-legend/style/fa/webfonts/fa-solid-900.ttf": {
+    "file": "_app/immutable/assets/fa-solid-900-6d53c706.ttf",
+    "src": "node_modules/@watergis/svelte-maplibre-legend/style/fa/webfonts/fa-solid-900.ttf"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-cc1c882b.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-952dc840.js",
+      "_singletons-f3bd809e.js",
+      "_preload-helper-aa6bc0ce.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte": {
+    "file": "_app/immutable/components/layout.svelte-ba0b0372.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-952dc840.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-f7bfea82.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-952dc840.js",
+      "_stores-be1f3060.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-bb43bd8e.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-952dc840.js",
+      "__page-12916bf3.js"
+    ]
+  },
+  "src/routes/+page.ts": {
+    "file": "_app/immutable/modules/pages/_page.ts-f4c35b8f.js",
+    "src": "src/routes/+page.ts",
+    "isEntry": true,
+    "imports": [
+      "__page-c82b235a.js"
+    ]
+  },
+  "_singletons-f3bd809e.js": {
+    "file": "_app/immutable/chunks/singletons-f3bd809e.js",
+    "imports": [
+      "_index-952dc840.js"
+    ]
+  },
+  "_index-952dc840.js": {
+    "file": "_app/immutable/chunks/index-952dc840.js"
+  },
+  "_preload-helper-aa6bc0ce.js": {
+    "file": "_app/immutable/chunks/preload-helper-aa6bc0ce.js"
+  },
+  "_stores-be1f3060.js": {
+    "file": "_app/immutable/chunks/stores-be1f3060.js",
+    "imports": [
+      "_index-952dc840.js",
+      "_singletons-f3bd809e.js"
+    ]
+  },
+  "__page-12916bf3.js": {
+    "file": "_app/immutable/chunks/_page-12916bf3.js",
+    "imports": [
+      "_index-952dc840.js",
+      "_singletons-f3bd809e.js",
+      "_preload-helper-aa6bc0ce.js",
+      "_stores-be1f3060.js"
+    ],
+    "dynamicImports": [
+      "node_modules/html2canvas/dist/html2canvas.esm.js",
+      "node_modules/dompurify/dist/purify.es.js",
+      "node_modules/canvg/lib/index.es.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page-f911e15d.css"
+    ],
+    "assets": [
+      "_app/immutable/assets/fa-solid-900-d27bc752.woff2",
+      "_app/immutable/assets/fa-solid-900-6d53c706.ttf"
+    ]
+  },
+  "__page-c82b235a.js": {
+    "file": "_app/immutable/chunks/_page-c82b235a.js"
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-fec88e83.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-c103211f.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-6f824b16.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-c82b235a.js",
+      "__page-12916bf3.js"
+    ]
+  },
+  "node_modules/html2canvas/dist/html2canvas.esm.js": {
+    "file": "_app/immutable/chunks/html2canvas.esm-fb42d204.js",
+    "src": "node_modules/html2canvas/dist/html2canvas.esm.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/dompurify/dist/purify.es.js": {
+    "file": "_app/immutable/chunks/purify.es-20117e50.js",
+    "src": "node_modules/dompurify/dist/purify.es.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/canvg/lib/index.es.js": {
+    "file": "_app/immutable/chunks/index.es-5e52747e.js",
+    "src": "node_modules/canvg/lib/index.es.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__page-12916bf3.js"
+    ]
+  },
+  "_page.css": {
+    "file": "_app/immutable/assets/_page-f911e15d.css",
+    "src": "_page.css"
+  }
+}
