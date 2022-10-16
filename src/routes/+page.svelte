@@ -13,7 +13,7 @@
 
 <sveltekit:head>
 	<title>{config.title}</title>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ER1REZ1KMF"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170080825-7"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() {
@@ -21,7 +21,7 @@
 		}
 		gtag('js', new Date());
 
-		gtag('config', 'G-ER1REZ1KMF');
+		gtag('config', 'UA-170080825-7');
 	</script>
 	<link
 		rel="stylesheet"
