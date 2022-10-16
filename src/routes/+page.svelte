@@ -13,6 +13,16 @@
 
 <sveltekit:head>
 	<title>{config.title}</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ER1REZ1KMF"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'G-ER1REZ1KMF');
+	</script>
 	<link
 		rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
