@@ -3,12 +3,12 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
-		<link rel="shortcut icon" href="/watergis/favicon.png" />
-		<link rel="icon" href="/watergis/favicon.png" />
+		<link rel="shortcut icon" href="./favicon.png" />
+		<link rel="icon" href="./favicon.png" />
 		<link
 			rel="manifest"
 			crossorigin="use-credentials"
-			href="/watergis/manifest.webmanifest"
+			href="./manifest.webmanifest"
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -18,14 +18,14 @@
 		/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono" />
 		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="/watergis/_app/immutable/start-cc1c882b.js">
-		<link rel="modulepreload" href="/watergis/_app/immutable/chunks/index-952dc840.js">
-		<link rel="modulepreload" href="/watergis/_app/immutable/chunks/singletons-f3bd809e.js">
-		<link rel="modulepreload" href="/watergis/_app/immutable/chunks/preload-helper-aa6bc0ce.js">
+		<link rel="modulepreload" href="./_app/immutable/start-48088dc3.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index-952dc840.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-f1397fcc.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper-aa6bc0ce.js">
 		<script>
 			if ('serviceWorker' in navigator) {
 				addEventListener('load', function () {
-					navigator.serviceWorker.register('/watergis/service-worker.js');
+					navigator.serviceWorker.register('./service-worker.js');
 				});
 			}
 		</script>
@@ -43,12 +43,12 @@
 	<body>
 		<div>
 		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "/watergis/_app/immutable/start-cc1c882b.js";
+			import { start } from "./_app/immutable/start-48088dc3.js";
 
 			start({
 				env: {},
 				hydrate: null,
-				paths: {"base":"/watergis","assets":"/watergis"},
+				paths: {"base":"","assets":""},
 				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
 				trailing_slash: "never"
 			});

@@ -1,45 +1,45 @@
-const m = [
-  "/watergis/_app/immutable/assets/fa-solid-900-d27bc752.woff2",
-  "/watergis/_app/immutable/assets/fa-solid-900-6d53c706.ttf",
-  "/watergis/_app/immutable/start-cc1c882b.js",
-  "/watergis/_app/immutable/components/layout.svelte-ba0b0372.js",
-  "/watergis/_app/immutable/components/error.svelte-f7bfea82.js",
-  "/watergis/_app/immutable/components/pages/_page.svelte-bb43bd8e.js",
-  "/watergis/_app/immutable/modules/pages/_page.ts-f4c35b8f.js",
-  "/watergis/_app/immutable/chunks/singletons-f3bd809e.js",
-  "/watergis/_app/immutable/chunks/index-952dc840.js",
-  "/watergis/_app/immutable/chunks/preload-helper-aa6bc0ce.js",
-  "/watergis/_app/immutable/chunks/stores-be1f3060.js",
-  "/watergis/_app/immutable/chunks/_page-12916bf3.js",
-  "/watergis/_app/immutable/assets/_page-f911e15d.css",
-  "/watergis/_app/immutable/chunks/_page-c82b235a.js",
-  "/watergis/_app/immutable/chunks/0-fec88e83.js",
-  "/watergis/_app/immutable/chunks/1-c103211f.js",
-  "/watergis/_app/immutable/chunks/2-6f824b16.js",
-  "/watergis/_app/immutable/chunks/html2canvas.esm-fb42d204.js",
-  "/watergis/_app/immutable/chunks/purify.es-20117e50.js",
-  "/watergis/_app/immutable/chunks/index.es-5e52747e.js"
-], g = [
-  "/watergis/.nojekyll",
-  "/watergis/assets/icons/icon-128x128.png",
-  "/watergis/assets/icons/icon-144x144.png",
-  "/watergis/assets/icons/icon-152x152.png",
-  "/watergis/assets/icons/icon-192x192.png",
-  "/watergis/assets/icons/icon-384x384.png",
-  "/watergis/assets/icons/icon-48x48.png",
-  "/watergis/assets/icons/icon-512x512.png",
-  "/watergis/assets/icons/icon-72x72.png",
-  "/watergis/assets/icons/icon-96x96.png",
-  "/watergis/favicon.png",
-  "/watergis/manifest.webmanifest",
-  "/watergis/map-center.png",
-  "/watergis/robots.txt",
-  "/watergis/smui-dark.css",
-  "/watergis/smui.css"
-], n = "1665927693602", a = self, o = `cache${n}`, r = m.concat(g), l = new Set(r);
+const l = [
+  "/_app/immutable/assets/fa-solid-900-d27bc752.woff2",
+  "/_app/immutable/assets/fa-solid-900-6d53c706.ttf",
+  "/_app/immutable/start-48088dc3.js",
+  "/_app/immutable/components/layout.svelte-ba0b0372.js",
+  "/_app/immutable/components/error.svelte-6c9238f4.js",
+  "/_app/immutable/components/pages/_page.svelte-46526ef1.js",
+  "/_app/immutable/modules/pages/_page.ts-f4c35b8f.js",
+  "/_app/immutable/chunks/singletons-f1397fcc.js",
+  "/_app/immutable/chunks/index-952dc840.js",
+  "/_app/immutable/chunks/preload-helper-aa6bc0ce.js",
+  "/_app/immutable/chunks/stores-dba2c8ab.js",
+  "/_app/immutable/chunks/_page-bb5537f0.js",
+  "/_app/immutable/assets/_page-f911e15d.css",
+  "/_app/immutable/chunks/_page-c82b235a.js",
+  "/_app/immutable/chunks/0-fec88e83.js",
+  "/_app/immutable/chunks/1-68ab42b6.js",
+  "/_app/immutable/chunks/2-6f9b24d7.js",
+  "/_app/immutable/chunks/html2canvas.esm-fb42d204.js",
+  "/_app/immutable/chunks/purify.es-20117e50.js",
+  "/_app/immutable/chunks/index.es-673d4cc9.js"
+], u = [
+  "/.nojekyll",
+  "/assets/icons/icon-128x128.png",
+  "/assets/icons/icon-144x144.png",
+  "/assets/icons/icon-152x152.png",
+  "/assets/icons/icon-192x192.png",
+  "/assets/icons/icon-384x384.png",
+  "/assets/icons/icon-48x48.png",
+  "/assets/icons/icon-512x512.png",
+  "/assets/icons/icon-72x72.png",
+  "/assets/icons/icon-96x96.png",
+  "/favicon.png",
+  "/manifest.webmanifest",
+  "/map-center.png",
+  "/robots.txt",
+  "/smui-dark.css",
+  "/smui.css"
+], i = "1665930811795", a = self, o = `cache${i}`, p = l.concat(u), h = new Set(p);
 a.addEventListener("install", (s) => {
   s.waitUntil(
-    caches.open(o).then((e) => e.addAll(r)).then(() => {
+    caches.open(o).then((e) => e.addAll(p)).then(() => {
       a.skipWaiting();
     })
   );
@@ -53,23 +53,23 @@ a.addEventListener("activate", (s) => {
     })
   );
 });
-async function u(s) {
-  const e = await caches.open(`offline${n}`);
+async function r(s) {
+  const e = await caches.open(`offline${i}`);
   try {
     const t = await fetch(s);
     return e.put(s, t.clone()), t;
   } catch (t) {
-    const i = await e.match(s);
-    if (i)
-      return i;
+    const c = await e.match(s);
+    if (c)
+      return c;
     throw t;
   }
 }
 a.addEventListener("fetch", (s) => {
   if (s.request.method !== "GET" || s.request.headers.has("range"))
     return;
-  const e = new URL(s.request.url), t = e.protocol.startsWith("http"), i = e.hostname === self.location.hostname && e.port !== self.location.port, c = e.host === self.location.host && l.has(e.pathname), p = s.request.cache === "only-if-cached" && !c;
-  t && !i && !p && s.respondWith(
-    (async () => c && await caches.match(s.request) || u(s.request))()
+  const e = new URL(s.request.url), t = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, n = e.host === self.location.host && h.has(e.pathname), m = s.request.cache === "only-if-cached" && !n;
+  t && !c && !m && s.respondWith(
+    (async () => n && await caches.match(s.request) || r(s.request))()
   );
 });
