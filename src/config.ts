@@ -1,10 +1,12 @@
 import type { Config } from './lib/types';
 
+const basePath = process.env.NODE_ENV === 'production' ? '/watergis' : '';
+
 export const config: Config = {
 	title: 'Water Supply Map for Nanyuki Water',
 	url: 'https://nawasco.co.ke',
-	logo: '/favicon.png',
-	basePath: process.env.NODE_ENV === 'production' ? '/watergis' : '',
+	logo: `${basePath}/favicon.png`,
+	basePath: basePath,
 	// basePath: '',
 	// change attribution to yours
 	attribution: '©Nanyuki Water and Serwerage Co., Ltd.',
