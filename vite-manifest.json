@@ -8,12 +8,12 @@
     "src": "node_modules/@watergis/svelte-maplibre-legend/style/fa/webfonts/fa-solid-900.ttf"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-931bf8f5.js",
+    "file": "_app/immutable/start-d7da0cc1.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-6dd75127.js",
-      "_singletons-ce560b23.js",
+      "_singletons-4221d4bf.js",
       "_preload-helper-aa6bc0ce.js"
     ],
     "dynamicImports": [
@@ -31,21 +31,21 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-6f9e11a8.js",
+    "file": "_app/immutable/components/error.svelte-bc72efc1.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-6dd75127.js",
-      "_stores-3a9cbeb0.js"
+      "_stores-abebb1e8.js"
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-993b12b0.js",
+    "file": "_app/immutable/components/pages/_page.svelte-0cb5bba1.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
       "_index-6dd75127.js",
-      "__page-185572c1.js"
+      "__page-a0cd60a7.js"
     ]
   },
   "src/routes/+page.ts": {
@@ -56,8 +56,8 @@
       "__page-c82b235a.js"
     ]
   },
-  "_singletons-ce560b23.js": {
-    "file": "_app/immutable/chunks/singletons-ce560b23.js",
+  "_singletons-4221d4bf.js": {
+    "file": "_app/immutable/chunks/singletons-4221d4bf.js",
     "imports": [
       "_index-6dd75127.js"
     ]
@@ -68,20 +68,20 @@
   "_preload-helper-aa6bc0ce.js": {
     "file": "_app/immutable/chunks/preload-helper-aa6bc0ce.js"
   },
-  "_stores-3a9cbeb0.js": {
-    "file": "_app/immutable/chunks/stores-3a9cbeb0.js",
+  "_stores-abebb1e8.js": {
+    "file": "_app/immutable/chunks/stores-abebb1e8.js",
     "imports": [
       "_index-6dd75127.js",
-      "_singletons-ce560b23.js"
+      "_singletons-4221d4bf.js"
     ]
   },
-  "__page-185572c1.js": {
-    "file": "_app/immutable/chunks/_page-185572c1.js",
+  "__page-a0cd60a7.js": {
+    "file": "_app/immutable/chunks/_page-a0cd60a7.js",
     "imports": [
       "_index-6dd75127.js",
-      "_singletons-ce560b23.js",
+      "_singletons-4221d4bf.js",
       "_preload-helper-aa6bc0ce.js",
-      "_stores-3a9cbeb0.js"
+      "_stores-abebb1e8.js"
     ],
     "dynamicImports": [
       "node_modules/html2canvas/dist/html2canvas.esm.js",
@@ -108,7 +108,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-fa9768d0.js",
+    "file": "_app/immutable/chunks/1-17f9771c.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -116,12 +116,12 @@
     ]
   },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-c653bf62.js",
+    "file": "_app/immutable/chunks/2-c1f8b3eb.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
       "__page-c82b235a.js",
-      "__page-185572c1.js"
+      "__page-a0cd60a7.js"
     ]
   },
   "node_modules/html2canvas/dist/html2canvas.esm.js": {
@@ -135,11 +135,11 @@
     "isDynamicEntry": true
   },
   "node_modules/canvg/lib/index.es.js": {
-    "file": "_app/immutable/chunks/index.es-5990e61b.js",
+    "file": "_app/immutable/chunks/index.es-42fdf3a0.js",
     "src": "node_modules/canvg/lib/index.es.js",
     "isDynamicEntry": true,
     "imports": [
-      "__page-185572c1.js"
+      "__page-a0cd60a7.js"
     ]
   },
   "_page.css": {
