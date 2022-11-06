@@ -1,24 +1,24 @@
 const l = [
   "/watergis/_app/immutable/assets/fa-solid-900-d27bc752.woff2",
   "/watergis/_app/immutable/assets/fa-solid-900-6d53c706.ttf",
-  "/watergis/_app/immutable/start-7ac378eb.js",
+  "/watergis/_app/immutable/start-8643a161.js",
   "/watergis/_app/immutable/components/layout.svelte-b9f3653e.js",
-  "/watergis/_app/immutable/components/error.svelte-0f01e4b6.js",
-  "/watergis/_app/immutable/components/pages/_page.svelte-2f9d5708.js",
+  "/watergis/_app/immutable/components/error.svelte-d86755e9.js",
+  "/watergis/_app/immutable/components/pages/_page.svelte-3289c526.js",
   "/watergis/_app/immutable/modules/pages/_page.ts-f4c35b8f.js",
-  "/watergis/_app/immutable/chunks/singletons-c09cb5af.js",
+  "/watergis/_app/immutable/chunks/singletons-388e19cd.js",
   "/watergis/_app/immutable/chunks/index-fbce07e2.js",
   "/watergis/_app/immutable/chunks/index-3d46d3d9.js",
   "/watergis/_app/immutable/chunks/preload-helper-b21cceae.js",
-  "/watergis/_app/immutable/chunks/_page-adf282bd.js",
+  "/watergis/_app/immutable/chunks/_page-36cb42fb.js",
   "/watergis/_app/immutable/assets/_page-87453f06.css",
   "/watergis/_app/immutable/chunks/_page-c82b235a.js",
   "/watergis/_app/immutable/chunks/0-a5edf11b.js",
-  "/watergis/_app/immutable/chunks/1-6d2a82ee.js",
-  "/watergis/_app/immutable/chunks/2-4067fb69.js",
+  "/watergis/_app/immutable/chunks/1-ec444852.js",
+  "/watergis/_app/immutable/chunks/2-5d60f8eb.js",
   "/watergis/_app/immutable/chunks/html2canvas.esm-fb42d204.js",
   "/watergis/_app/immutable/chunks/purify.es-20117e50.js",
-  "/watergis/_app/immutable/chunks/index.es-77227caf.js"
+  "/watergis/_app/immutable/chunks/index.es-53ae0e59.js"
 ], m = [
   "/watergis/.nojekyll",
   "/watergis/assets/icons/icon-128x128.png",
@@ -32,9 +32,8 @@ const l = [
   "/watergis/assets/icons/icon-96x96.png",
   "/watergis/favicon.png",
   "/watergis/manifest.webmanifest",
-  "/watergis/map-center.png",
   "/watergis/robots.txt"
-], n = "1667164702405", a = self, o = `cache${n}`, p = l.concat(m), g = new Set(p);
+], n = "1667729829046", a = self, o = `cache${n}`, p = l.concat(m), g = new Set(p);
 a.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(p)).then(() => {
