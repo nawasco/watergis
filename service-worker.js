@@ -1,24 +1,24 @@
 const l = [
   "/watergis/_app/immutable/assets/fa-solid-900-d27bc752.woff2",
   "/watergis/_app/immutable/assets/fa-solid-900-6d53c706.ttf",
-  "/watergis/_app/immutable/start-8643a161.js",
-  "/watergis/_app/immutable/components/layout.svelte-b9f3653e.js",
-  "/watergis/_app/immutable/components/error.svelte-d86755e9.js",
-  "/watergis/_app/immutable/components/pages/_page.svelte-3289c526.js",
+  "/watergis/_app/immutable/start-ac72fbe0.js",
+  "/watergis/_app/immutable/components/layout.svelte-f25e1fec.js",
+  "/watergis/_app/immutable/components/error.svelte-36a6d867.js",
+  "/watergis/_app/immutable/components/pages/_page.svelte-9ce00519.js",
   "/watergis/_app/immutable/modules/pages/_page.ts-f4c35b8f.js",
-  "/watergis/_app/immutable/chunks/singletons-388e19cd.js",
-  "/watergis/_app/immutable/chunks/index-fbce07e2.js",
-  "/watergis/_app/immutable/chunks/index-3d46d3d9.js",
+  "/watergis/_app/immutable/chunks/singletons-6fd416a8.js",
+  "/watergis/_app/immutable/chunks/index-abb8a827.js",
+  "/watergis/_app/immutable/chunks/index-da9beac9.js",
   "/watergis/_app/immutable/chunks/preload-helper-b21cceae.js",
-  "/watergis/_app/immutable/chunks/_page-36cb42fb.js",
-  "/watergis/_app/immutable/assets/_page-87453f06.css",
+  "/watergis/_app/immutable/chunks/_page-bbe3d13b.js",
+  "/watergis/_app/immutable/assets/_page-508a831d.css",
   "/watergis/_app/immutable/chunks/_page-c82b235a.js",
-  "/watergis/_app/immutable/chunks/0-a5edf11b.js",
-  "/watergis/_app/immutable/chunks/1-ec444852.js",
-  "/watergis/_app/immutable/chunks/2-5d60f8eb.js",
+  "/watergis/_app/immutable/chunks/0-7c27cc7a.js",
+  "/watergis/_app/immutable/chunks/1-8fe3b2b0.js",
+  "/watergis/_app/immutable/chunks/2-58726fc4.js",
   "/watergis/_app/immutable/chunks/html2canvas.esm-fb42d204.js",
   "/watergis/_app/immutable/chunks/purify.es-20117e50.js",
-  "/watergis/_app/immutable/chunks/index.es-53ae0e59.js"
+  "/watergis/_app/immutable/chunks/index.es-1c5f5c4c.js"
 ], m = [
   "/watergis/.nojekyll",
   "/watergis/assets/icons/icon-128x128.png",
@@ -33,40 +33,40 @@ const l = [
   "/watergis/favicon.png",
   "/watergis/manifest.webmanifest",
   "/watergis/robots.txt"
-], n = "1667729829046", a = self, o = `cache${n}`, p = l.concat(m), g = new Set(p);
-a.addEventListener("install", (s) => {
+], n = "1667899854887", t = self, o = `cache${n}`, p = l.concat(m), g = new Set(p);
+t.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(p)).then(() => {
-      a.skipWaiting();
+      t.skipWaiting();
     })
   );
 });
-a.addEventListener("activate", (s) => {
+t.addEventListener("activate", (s) => {
   s.waitUntil(
     caches.keys().then(async (e) => {
-      for (const t of e)
-        t !== o && await caches.delete(t);
-      a.clients.claim();
+      for (const a of e)
+        a !== o && await caches.delete(a);
+      t.clients.claim();
     })
   );
 });
 async function h(s) {
   const e = await caches.open(`offline${n}`);
   try {
-    const t = await fetch(s);
-    return e.put(s, t.clone()), t;
-  } catch (t) {
-    const i = await e.match(s);
-    if (i)
-      return i;
-    throw t;
+    const a = await fetch(s);
+    return e.put(s, a.clone()), a;
+  } catch (a) {
+    const c = await e.match(s);
+    if (c)
+      return c;
+    throw a;
   }
 }
-a.addEventListener("fetch", (s) => {
+t.addEventListener("fetch", (s) => {
   if (s.request.method !== "GET" || s.request.headers.has("range"))
     return;
-  const e = new URL(s.request.url), t = e.protocol.startsWith("http"), i = e.hostname === self.location.hostname && e.port !== self.location.port, c = e.host === self.location.host && g.has(e.pathname), r = s.request.cache === "only-if-cached" && !c;
-  t && !i && !r && s.respondWith(
-    (async () => c && await caches.match(s.request) || h(s.request))()
+  const e = new URL(s.request.url), a = e.protocol.startsWith("http"), c = e.hostname === self.location.hostname && e.port !== self.location.port, i = e.host === self.location.host && g.has(e.pathname), r = s.request.cache === "only-if-cached" && !i;
+  a && !c && !r && s.respondWith(
+    (async () => i && await caches.match(s.request) || h(s.request))()
   );
 });
