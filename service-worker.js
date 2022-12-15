@@ -1,23 +1,23 @@
 const g = [
-  "/watergis/_app/immutable/assets/_page-07bf5adb.css",
-  "/watergis/_app/immutable/components/layout.svelte-e9f0b961.js",
-  "/watergis/_app/immutable/chunks/index-189e0129.js",
-  "/watergis/_app/immutable/chunks/0-8c3f9aed.js",
-  "/watergis/_app/immutable/chunks/_page-7e4796dc.js",
-  "/watergis/_app/immutable/chunks/index-05932267.js",
-  "/watergis/_app/immutable/chunks/2-89a5b824.js",
-  "/watergis/_app/immutable/chunks/index-5cbadba0.js",
-  "/watergis/_app/immutable/chunks/1-30f21a4c.js",
-  "/watergis/_app/immutable/chunks/singletons-f31f1661.js",
+  "/watergis/_app/immutable/assets/_page-6810e304.css",
+  "/watergis/_app/immutable/chunks/2-a1dc8421.js",
   "/watergis/_app/immutable/chunks/preload-helper-41c905a7.js",
-  "/watergis/_app/immutable/components/error.svelte-0e95dec4.js",
-  "/watergis/_app/immutable/start-ca1a8d7d.js",
-  "/watergis/_app/immutable/chunks/purify.es-b43afbc7.js",
-  "/watergis/_app/immutable/chunks/html2canvas.esm-b8f85a09.js",
-  "/watergis/_app/immutable/components/pages/_page.svelte-a7e51b41.js",
+  "/watergis/_app/immutable/components/error.svelte-8498ad8d.js",
+  "/watergis/_app/immutable/chunks/_page-7e4796dc.js",
+  "/watergis/_app/immutable/chunks/1-9724a59d.js",
+  "/watergis/_app/immutable/start-626fb115.js",
+  "/watergis/_app/immutable/chunks/index-af4b29fc.js",
+  "/watergis/_app/immutable/chunks/index-5cbadba0.js",
   "/watergis/_app/immutable/modules/pages/_page.ts-6a8cdd0a.js",
-  "/watergis/_app/immutable/chunks/index.es-f5acea9d.js",
-  "/watergis/_app/immutable/chunks/_page-f93e98ab.js"
+  "/watergis/_app/immutable/chunks/0-8c3f9aed.js",
+  "/watergis/_app/immutable/components/pages/_page.svelte-1d45a8bb.js",
+  "/watergis/_app/immutable/chunks/index-189e0129.js",
+  "/watergis/_app/immutable/chunks/purify.es-f1425ba2.js",
+  "/watergis/_app/immutable/components/layout.svelte-e9f0b961.js",
+  "/watergis/_app/immutable/chunks/singletons-f31f1661.js",
+  "/watergis/_app/immutable/chunks/html2canvas.esm-c0237c70.js",
+  "/watergis/_app/immutable/chunks/index.es-768dd0a8.js",
+  "/watergis/_app/immutable/chunks/_page-3e4e793f.js"
 ], l = [
   "/watergis/.nojekyll",
   "/watergis/assets/icons/icon-128x128.png",
@@ -33,7 +33,7 @@ const g = [
   "/watergis/favicon.png",
   "/watergis/manifest.webmanifest",
   "/watergis/robots.txt"
-], n = "1670697037019", t = self, o = `cache${n}`, r = g.concat(l), m = new Set(r);
+], n = "1671108892040", t = self, o = `cache${n}`, r = g.concat(l), m = new Set(r);
 t.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(r)).then(() => {
