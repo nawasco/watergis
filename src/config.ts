@@ -68,7 +68,13 @@ export const config: Config = {
 		},
 		place_type: ['meter'],
 		placeholder: 'Account No or S/N',
-		zoom: 16
+		zoom: 16,
+		maxItems: 50,
+		sortItems: (a, b) => {
+			return a.accountno - b.accountno;
+		},
+		matchAllKeywords: false,
+		sortByMatchedKeywords: true
 	},
 	// please specify layers' name for showing popup with attributes table.
 	popup: {
