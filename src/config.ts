@@ -1,6 +1,7 @@
 import type { Config } from './lib/types';
 
-const basePath = process.env.NODE_ENV === 'production' ? '/watergis' : '';
+// const basePath = process.env.NODE_ENV === 'production' ? '/watergis' : '';
+const basePath = '';
 
 export const config: Config = {
 	title: 'Water Supply Map for Nanyuki Water',
