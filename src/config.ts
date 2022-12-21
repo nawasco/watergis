@@ -46,35 +46,12 @@ export const config: Config = {
 		url: 'https://nawasco.github.io/vt/meter.geojson',
 		target: ['accountno', 'serialno'],
 		format: (p) => {
-			const label: string[] = [];
-			const targets = ['accountno', 'serialno', 'category'];
-			targets.forEach((target) => {
-				if (p[target]) {
-					let text = p[target];
-					switch (target) {
-						case 'accountno':
-							text = `A/C: ${text}`;
-							break;
-						case 'serialno':
-							text = `S/N: ${text}`;
-							break;
-						default:
-							break;
-					}
-					label.push(text);
-				}
-			});
-			return label.length > 0 ? label.join(', ') : '';
+			return `A/C: ${p.accountno}, S/N: ${p.serialno}, ${p.category}`;
 		},
 		place_type: ['meter'],
 		placeholder: 'Account No or S/N',
 		zoom: 16,
-		maxItems: 50,
-		sortItems: (a, b) => {
-			return a.accountno - b.accountno;
-		},
-		matchAllKeywords: false,
-		sortByMatchedKeywords: true
+		limit: 50
 	},
 	// please specify layers' name for showing popup with attributes table.
 	popup: {
