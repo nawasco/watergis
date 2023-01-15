@@ -1,23 +1,23 @@
 const m = [
   "/_app/immutable/assets/_page-2fe65346.css",
-  "/_app/immutable/components/layout.svelte-99529342.js",
-  "/_app/immutable/chunks/index-71eac763.js",
-  "/_app/immutable/chunks/purify.es-075a2866.js",
-  "/_app/immutable/chunks/preload-helper-41c905a7.js",
-  "/_app/immutable/components/error.svelte-1d9f4709.js",
-  "/_app/immutable/chunks/0-016a1d45.js",
-  "/_app/immutable/chunks/2-5e2affc8.js",
-  "/_app/immutable/chunks/_page-7e4796dc.js",
-  "/_app/immutable/chunks/1-8d9436e2.js",
-  "/_app/immutable/chunks/index-95d721c5.js",
-  "/_app/immutable/start-43d1c354.js",
-  "/_app/immutable/components/pages/_page.svelte-37bfba39.js",
   "/_app/immutable/modules/pages/_page.ts-6a8cdd0a.js",
-  "/_app/immutable/chunks/index-d23b2ecc.js",
-  "/_app/immutable/chunks/singletons-d7293337.js",
-  "/_app/immutable/chunks/index.es-e143868a.js",
+  "/_app/immutable/chunks/0-e90cdcb6.js",
+  "/_app/immutable/chunks/1-8961486a.js",
+  "/_app/immutable/chunks/2-1c5ff8d9.js",
+  "/_app/immutable/chunks/index-b7e32f82.js",
+  "/_app/immutable/components/layout.svelte-ccac2896.js",
+  "/_app/immutable/components/error.svelte-9a383711.js",
+  "/_app/immutable/chunks/_page-7e4796dc.js",
+  "/_app/immutable/chunks/preload-helper-41c905a7.js",
+  "/_app/immutable/chunks/singletons-9256956e.js",
+  "/_app/immutable/components/pages/_page.svelte-457502fc.js",
+  "/_app/immutable/start-9296bc6c.js",
+  "/_app/immutable/chunks/index-6a020e87.js",
   "/_app/immutable/chunks/html2canvas.esm-0a33ed42.js",
-  "/_app/immutable/chunks/_page-defbd9ef.js"
+  "/_app/immutable/chunks/index-95d721c5.js",
+  "/_app/immutable/chunks/purify.es-075a2866.js",
+  "/_app/immutable/chunks/index.es-31dc5fc6.js",
+  "/_app/immutable/chunks/_page-4d9173bc.js"
 ], h = [
   "/.nojekyll",
   "/assets/icons/icon-128x128.png",
@@ -33,7 +33,7 @@ const m = [
   "/favicon.png",
   "/manifest.webmanifest",
   "/robots.txt"
-], i = "1672062403467", a = self, o = `cache${i}`, p = m.concat(h), u = new Set(p);
+], i = "1673803795686", a = self, o = `cache${i}`, p = m.concat(h), u = new Set(p);
 a.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(p)).then(() => {
