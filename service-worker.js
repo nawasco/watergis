@@ -33,7 +33,7 @@ const m = [
   "/favicon.png",
   "/manifest.webmanifest",
   "/robots.txt"
-], i = "1676823983212", t = self, o = `cache${i}`, p = m.concat(h), u = new Set(p);
+], i = "1676886487953", t = self, o = `cache${i}`, p = m.concat(h), u = new Set(p);
 t.addEventListener("install", (s) => {
   s.waitUntil(
     caches.open(o).then((e) => e.addAll(p)).then(() => {
