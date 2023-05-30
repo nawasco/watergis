@@ -147,5 +147,9 @@ export const config: Config = {
 	terrain: {
 		source: 'nanyuki-dem',
 		exaggeration: 1
+	},
+	attributeTable: {
+		rowsPerPage: 25,
+		minZoom: 14
 	}
 };
