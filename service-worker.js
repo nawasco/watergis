@@ -1,18 +1,18 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r = [
-  s + "/_app/immutable/entry/app.ec7a330f.js",
+  s + "/_app/immutable/entry/app.c40fcc29.js",
   s + "/_app/immutable/nodes/0.b105fabc.js",
-  s + "/_app/immutable/nodes/1.e958f5ba.js",
-  s + "/_app/immutable/nodes/2.c1fe73c0.js",
-  s + "/_app/immutable/assets/2.eb2eeca0.css",
-  s + "/_app/immutable/chunks/2.88543dee.js",
-  s + "/_app/immutable/chunks/index.4573d3b8.js",
+  s + "/_app/immutable/nodes/1.d55c5875.js",
+  s + "/_app/immutable/nodes/2.9b0264a7.js",
+  s + "/_app/immutable/assets/2.d3bc4739.css",
+  s + "/_app/immutable/chunks/2.afc79ae5.js",
+  s + "/_app/immutable/chunks/index.34f86bb4.js",
   s + "/_app/immutable/chunks/index.660b3be1.js",
   s + "/_app/immutable/chunks/index.89884ee4.js",
-  s + "/_app/immutable/chunks/preload-helper.41c905a7.js",
-  s + "/_app/immutable/chunks/singletons.ebe4e9ed.js",
-  s + "/_app/immutable/entry/start.f2e42fc3.js",
-  s + "/_app/immutable/chunks/index.es.6d4591a5.js",
-  s + "/_app/immutable/chunks/purify.es.f47f2ec0.js",
+  s + "/_app/immutable/chunks/preload-helper.cf010ec4.js",
+  s + "/_app/immutable/chunks/singletons.70574541.js",
+  s + "/_app/immutable/entry/start.d9e54f3f.js",
+  s + "/_app/immutable/chunks/index.es.0bcec1ee.js",
+  s + "/_app/immutable/chunks/purify.es.cf254a40.js",
   s + "/_app/immutable/chunks/html2canvas.esm.e0a7d97b.js"
 ], m = [
   s + "/.nojekyll",
@@ -29,20 +29,20 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r
   s + "/favicon.png",
   s + "/manifest.webmanifest",
   s + "/robots.txt"
-], o = "1686558988542", n = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
-n.addEventListener("install", (e) => {
+], o = "1689328537289", c = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
+c.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((t) => t.addAll(h)).then(() => {
-      n.skipWaiting();
+      c.skipWaiting();
     })
   );
 });
-n.addEventListener("activate", (e) => {
+c.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then(async (t) => {
       for (const a of t)
         a !== p && await caches.delete(a);
-      n.clients.claim();
+      c.clients.claim();
     })
   );
 });
@@ -52,17 +52,17 @@ async function d(e) {
     const a = await fetch(e);
     return t.put(e, a.clone()), a;
   } catch (a) {
-    const c = await t.match(e);
-    if (c)
-      return c;
+    const n = await t.match(e);
+    if (n)
+      return n;
     throw a;
   }
 }
-n.addEventListener("fetch", (e) => {
+c.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), c = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), l = e.request.cache === "only-if-cached" && !i;
-  a && !c && !l && e.respondWith(
+  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), n = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), l = e.request.cache === "only-if-cached" && !i;
+  a && !n && !l && e.respondWith(
     (async () => i && await caches.match(e.request) || d(e.request))()
   );
 });
