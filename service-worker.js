@@ -1,7 +1,7 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r = [
-  s + "/_app/immutable/entry/app.325e581c.js",
+  s + "/_app/immutable/entry/app.ac4914a5.js",
   s + "/_app/immutable/nodes/0.431c0a10.js",
-  s + "/_app/immutable/nodes/1.d95afdd2.js",
+  s + "/_app/immutable/nodes/1.bf290ec9.js",
   s + "/_app/immutable/nodes/2.3bf7973f.js",
   s + "/_app/immutable/assets/2.b83b1af7.css",
   s + "/_app/immutable/chunks/2.5c459728.js",
@@ -10,8 +10,8 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r
   s + "/_app/immutable/chunks/index.89c07c5d.js",
   s + "/_app/immutable/chunks/preload-helper.cf010ec4.js",
   s + "/_app/immutable/chunks/scheduler.5d7259d7.js",
-  s + "/_app/immutable/chunks/singletons.6ea54c5b.js",
-  s + "/_app/immutable/entry/start.1a474625.js",
+  s + "/_app/immutable/chunks/singletons.533c5343.js",
+  s + "/_app/immutable/entry/start.35cbddb8.js",
   s + "/_app/immutable/chunks/index.es.4487c546.js",
   s + "/_app/immutable/chunks/purify.es.cf254a40.js",
   s + "/_app/immutable/chunks/html2canvas.esm.e0a7d97b.js"
@@ -30,20 +30,20 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r
   s + "/favicon.png",
   s + "/manifest.webmanifest",
   s + "/robots.txt"
-], o = "1690479354642", n = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
-n.addEventListener("install", (e) => {
+], o = "1690479359514", c = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
+c.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((t) => t.addAll(h)).then(() => {
-      n.skipWaiting();
+      c.skipWaiting();
     })
   );
 });
-n.addEventListener("activate", (e) => {
+c.addEventListener("activate", (e) => {
   e.waitUntil(
     caches.keys().then(async (t) => {
       for (const a of t)
         a !== p && await caches.delete(a);
-      n.clients.claim();
+      c.clients.claim();
     })
   );
 });
@@ -53,17 +53,17 @@ async function d(e) {
     const a = await fetch(e);
     return t.put(e, a.clone()), a;
   } catch (a) {
-    const c = await t.match(e);
-    if (c)
-      return c;
+    const n = await t.match(e);
+    if (n)
+      return n;
     throw a;
   }
 }
-n.addEventListener("fetch", (e) => {
+c.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || e.request.headers.has("range"))
     return;
-  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), c = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), l = e.request.cache === "only-if-cached" && !i;
-  a && !c && !l && e.respondWith(
+  const t = new URL(e.request.url), a = t.protocol.startsWith("http"), n = t.hostname === self.location.hostname && t.port !== self.location.port, i = t.host === self.location.host && u.has(t.pathname), l = e.request.cache === "only-if-cached" && !i;
+  a && !n && !l && e.respondWith(
     (async () => i && await caches.match(e.request) || d(e.request))()
   );
 });
