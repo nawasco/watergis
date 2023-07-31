@@ -15,7 +15,7 @@
 </script>
 
 <sveltekit:head>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-DPVSZQ1DSZ"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-92S88ES5ZS"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() {
@@ -23,7 +23,7 @@
 		}
 		gtag('js', new Date());
 
-		gtag('config', 'G-DPVSZQ1DSZ');
+		gtag('config', 'G-92S88ES5ZS');
 	</script>
 </sveltekit:head>
 
