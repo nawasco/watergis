@@ -1,18 +1,18 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r = [
-  s + "/_app/immutable/entry/app.8fb9deeb.js",
-  s + "/_app/immutable/nodes/0.431c0a10.js",
-  s + "/_app/immutable/nodes/1.3ef2bc1d.js",
-  s + "/_app/immutable/nodes/2.b78125e2.js",
-  s + "/_app/immutable/assets/2.8531a707.css",
-  s + "/_app/immutable/chunks/2.19fe4af3.js",
-  s + "/_app/immutable/chunks/index.0d751005.js",
-  s + "/_app/immutable/chunks/index.7bbd4199.js",
-  s + "/_app/immutable/chunks/index.89c07c5d.js",
+  s + "/_app/immutable/entry/app.5fac089d.js",
+  s + "/_app/immutable/nodes/0.cac3c05e.js",
+  s + "/_app/immutable/nodes/1.d33ad3a6.js",
+  s + "/_app/immutable/nodes/2.45d28136.js",
+  s + "/_app/immutable/assets/2.4ec5b283.css",
+  s + "/_app/immutable/chunks/2.9272480d.js",
+  s + "/_app/immutable/chunks/index.a1df979d.js",
+  s + "/_app/immutable/chunks/index.dc661a08.js",
+  s + "/_app/immutable/chunks/index.f67b0ed0.js",
   s + "/_app/immutable/chunks/preload-helper.cf010ec4.js",
-  s + "/_app/immutable/chunks/scheduler.5d7259d7.js",
-  s + "/_app/immutable/chunks/singletons.6108c8e0.js",
-  s + "/_app/immutable/entry/start.861158bc.js",
-  s + "/_app/immutable/chunks/index.es.6d175138.js",
+  s + "/_app/immutable/chunks/scheduler.e663fd29.js",
+  s + "/_app/immutable/chunks/singletons.4b428a7e.js",
+  s + "/_app/immutable/entry/start.24475277.js",
+  s + "/_app/immutable/chunks/index.es.1dd2740e.js",
   s + "/_app/immutable/chunks/purify.es.cf254a40.js",
   s + "/_app/immutable/chunks/html2canvas.esm.e0a7d97b.js"
 ], m = [
@@ -30,7 +30,7 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), r
   s + "/favicon.png",
   s + "/manifest.webmanifest",
   s + "/robots.txt"
-], o = "1690799796935", n = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
+], o = "1693066122985", n = self, p = `cache${o}`, h = r.concat(m), u = new Set(h);
 n.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open(p).then((t) => t.addAll(h)).then(() => {
