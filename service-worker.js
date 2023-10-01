@@ -1,18 +1,18 @@
 const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), l = [
-  s + "/_app/immutable/entry/app.7844ddfc.js",
+  s + "/_app/immutable/entry/app.8f8d6723.js",
   s + "/_app/immutable/nodes/0.34bf2741.js",
-  s + "/_app/immutable/nodes/1.c2050d3d.js",
-  s + "/_app/immutable/nodes/2.84c1c12b.js",
-  s + "/_app/immutable/assets/2.31e10935.css",
-  s + "/_app/immutable/chunks/2.5e523664.js",
+  s + "/_app/immutable/nodes/1.cf8523bf.js",
+  s + "/_app/immutable/nodes/2.9cb8e2d8.js",
+  s + "/_app/immutable/assets/2.65b04dfe.css",
+  s + "/_app/immutable/chunks/2.74d897d6.js",
   s + "/_app/immutable/chunks/index.40e11da7.js",
-  s + "/_app/immutable/chunks/index.4949e4f7.js",
+  s + "/_app/immutable/chunks/index.50e4f940.js",
   s + "/_app/immutable/chunks/preload-helper.a4192956.js",
   s + "/_app/immutable/chunks/scheduler.c37387d0.js",
-  s + "/_app/immutable/chunks/singletons.c93d598a.js",
-  s + "/_app/immutable/chunks/stores.31a0bac2.js",
-  s + "/_app/immutable/entry/start.4d8340f2.js",
-  s + "/_app/immutable/chunks/index.es.c7912a2e.js",
+  s + "/_app/immutable/chunks/singletons.0a16670e.js",
+  s + "/_app/immutable/chunks/stores.186a0dca.js",
+  s + "/_app/immutable/entry/start.374d27ed.js",
+  s + "/_app/immutable/chunks/index.es.265257a3.js",
   s + "/_app/immutable/chunks/purify.es.cf254a40.js",
   s + "/_app/immutable/chunks/html2canvas.esm.e0a7d97b.js"
 ], p = [
@@ -40,7 +40,7 @@ const s = /* @__PURE__ */ location.pathname.split("/").slice(0, -1).join("/"), l
   s + "/favicon.png",
   s + "/manifest.webmanifest",
   s + "/robots.txt"
-], u = "1696088746906", c = `cache-${u}`, o = [
+], u = "1696162088652", c = `cache-${u}`, o = [
   ...l,
   // the app itself
   ...p
