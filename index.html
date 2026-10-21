@@ -50,22 +50,20 @@
 			href="./manifest.webmanifest"
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-		<link href="./_app/immutable/entry/start.DiOJzKh3.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/CWtT5TDq.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/DUMJlp-F.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/BpqNSBBT.js" rel="modulepreload">
-		<link href="./_app/immutable/entry/app.DFZB-IYf.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/CRW-QEar.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/DdQ6ZQia.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/CqLYQK7e.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/CFNJoNUm.js" rel="modulepreload">
-		<link href="./_app/immutable/nodes/0.BmgIM8al.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/CJfcFfzk.js" rel="modulepreload">
-		<link href="./_app/immutable/nodes/2.sjAZHGmr.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/DZu1YLCZ.js" rel="modulepreload">
-		<link href="./_app/immutable/chunks/C8-tBI0A.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/start.DtR__7Bp.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CRzLMJPS.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BtqnC9xw.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/3J7w0HHz.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BiepKKRx.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.BPCWDIX6.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.d-YDKU8J.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.DzSqBUzz.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DoDcsXb_.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BFtilmZh.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/B5XbjTb1.js" rel="modulepreload">
 		
-		<link href="./_app/immutable/assets/2.BS44imWD.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.C9t9_8Dn.css" rel="stylesheet">
 	</head>
 	<style type="text/css">
 		html,
@@ -86,16 +84,16 @@
 		<div>
 			<script>
 				{
-					__sveltekit_11y47dr = {
-						base: new URL(".", location).pathname.slice(0, -1)
+					__sveltekit_49oihg = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						version: "1792584904080"
 					};
 
 					const element = document.currentScript.parentElement;
 
-					Promise.all([
-						import("./_app/immutable/entry/start.DiOJzKh3.js"),
-						import("./_app/immutable/entry/app.DFZB-IYf.js")
-					]).then(([kit, app]) => {
+					import("./_app/immutable/entry/start.DtR__7Bp.js").then(async (kit) => {
+						kit.init(__sveltekit_49oihg);
+						const app = await import("./_app/immutable/entry/app.BPCWDIX6.js");
 						kit.start(app, element);
 					});
 
@@ -107,7 +105,7 @@
 						);
 						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
 						addEventListener('load', function () {
-							navigator.serviceWorker.register(sanitised);
+							navigator.serviceWorker.register(sanitised, { type: 'module' });
 						});
 					}
 				}
